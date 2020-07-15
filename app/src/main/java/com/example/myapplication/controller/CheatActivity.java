@@ -23,7 +23,7 @@ public class CheatActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager
                 .beginTransaction()
-                .add(R.id.fragment_cheat_container, new QuizFragment())
+                .add(R.id.fragment_cheat_container, new CheatFragment())
                 .commit();
     }
 }

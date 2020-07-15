@@ -12,14 +12,15 @@ import com.example.myapplication.R;
 public class QuizActivity extends AppCompatActivity {
 
 
+    private FragmentManager mfragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager
+        mfragmentManager = getSupportFragmentManager();
+        mfragmentManager
                 .beginTransaction()
                 .add(R.id.fragment_quiz_container, new QuizFragment())
                 .commit();
